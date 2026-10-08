@@ -5,10 +5,9 @@ function Card({ name, attack, type }) {
             <p>{attack}</p>
             <p>{type}</p>
             {attack >= 6 && <span>Gordo</span>}
-
         </li>
-        
+
     );
 }
- 
+
 export default Card;

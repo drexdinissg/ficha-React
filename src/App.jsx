@@ -26,8 +26,16 @@ function App() {
       {cards.map((card) => (
         <Card key={card.name} {...card} />
       ))}
+      <p>Tenho {cards.length} cartas</p>
     </ul>
+    
+
   );
+     <div>
+        <button onClick={() => setFilter("Todas")}>Todas</button>
+        <button onClick={() => setFilter("Criatura")}>Só criaturas</button>
+        <button onClick={() => setFilter("Feitiço")}>Só feitiços</button>
+      </div>
 }
 
 export default App;
